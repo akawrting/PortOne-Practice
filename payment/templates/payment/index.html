@@ -8,6 +8,7 @@
     
 </head>
     <body>
+        <p id="pay-amount" data-amount="{{pay_amount}}">결제 금액: {{ pay_amount }}원</p>
         <button id="payButton">Pay now!</button>
         <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
         <script src="{% static 'payment/main.js' %}"></script>
