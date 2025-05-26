@@ -1,8 +1,10 @@
 from django.shortcuts import render
-
+import sys
+sys.path.append(r"C:\PortOne-Practice")
+from basket import total_price
 def index(request):
     #여기에 가격 들어가게 하면 됨
-    pay_amount = 1000
+    pay_amount = total_price
     return render(request, 'payment/index.html' , {"pay_amount": pay_amount})
 
 def payment_success(request):
