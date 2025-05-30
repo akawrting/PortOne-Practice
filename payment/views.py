@@ -1,6 +1,8 @@
 from django.shortcuts import render
 import sys
-sys.path.append(r"C:\PortOne-Practice")
+sys.path.append(r"..")
+
+#basket.py(임의의 장바구니 코드)의 값을 불러오게 함
 from basket import total_price
 def index(request):
     #여기에 가격 들어가게 하면 됨

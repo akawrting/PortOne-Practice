@@ -1,1 +1,1 @@
-total_price=40000
+total_price=30000
